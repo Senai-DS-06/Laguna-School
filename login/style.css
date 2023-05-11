@@ -1,4 +1,5 @@
 * {
+    /* fonte ( Courier new ) e centralização */
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 
@@ -40,12 +41,15 @@ body {
 }
 
 
-.typer {
-    background-color: rgb(255, 255, 255);
+.texto {
+    background-color: rgba(255, 255, 255,0.7);
     border: 0;
-    opacity: .7;
 
-    padding: 20px;
+    font-size: 16px;
+
+    width: 300px;
+
+    padding: 16px;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
 
@@ -104,6 +108,8 @@ input[type="submit"], input[type="reset"] {
     border-radius: 100%;
     border: 2px rgba( 0, 0, 0, 0.2 ) solid;
 
+    background-image: linear-gradient( to right, rgb(5, 5, 121), blue );
+
     /* Tamanho da imagem */
     width: 120px;
 
@@ -111,11 +117,4 @@ input[type="submit"], input[type="reset"] {
     position: absolute;
     right: 20px;
     top: 20px;
-
-    /* Animação de crescer quando o maus passa por cima */
-    transition: width 400ms;
-}
-
-#logo:hover {
-    width: 200px;
 }

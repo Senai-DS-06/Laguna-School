@@ -10,14 +10,20 @@
 </head>
 
 <body>
-    <!-- Logo da escola -->
     <img src="../img/logo.png" id="logo">
 
-    <form class="cadastro" action="file:///E:/senas/projeto_final/itens/block.html">
-        <h1>LAGUNA SCHOOL</h1>
+    <form id="cadastro" class="cadastro" action="/usuario/aluno/index.html">
+        <h1>LOGIN</h1>
 
-        <input class="typer" type="text" name="nome" placeholder="login">
-        <input class="typer" type="password" name="senha" placeholder="*****">
+        <input class="texto" type="text" name="nome" placeholder="login" autofocus>
+
+        <select id="cargo" class="texto" style="width:330px;" oninput="mudar_opcao()" >
+            <option value="aluno" selected>Aluno</option>
+            <option value="professor">Professor</option>
+            <option value="representante_de_sala">Representante de Sala</option>
+        </select>
+
+        <input class="texto" type="password" name="senha" placeholder="*****">
 
         <img  id="img-2" src="../img/livros_escolares.png">
 
@@ -30,6 +36,8 @@
     <div id="extras">
         <img id="img-1" src="../img/fundo_agenda.webp">
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
