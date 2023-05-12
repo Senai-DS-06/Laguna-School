@@ -30,4 +30,4 @@ Linguagems de Marcação      | CSS                    | estilização de págin
 Linguagem de Programação    | Javascript             | dinamicidade das páginas web
 Sistema de Versionamento    | Github                 | Controlar e armazenar os arquivos das diferentes versões da aplicação
 Navegador                   | Mozilla Firefox        | Usado para testar a aplicação, tanto a sua funcionalidade, quanto a visibilidade
-Editor de Texto             | Visual Studio Code     | eitar o arquivos da aplicação
+Editor de Texto             | Visual Studio Code     | editar o arquivos da aplicação
