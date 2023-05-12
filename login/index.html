@@ -15,7 +15,7 @@
     <form id="cadastro" class="cadastro" action="/usuario/aluno/index.html">
         <h1>LOGIN</h1>
 
-        <input class="texto" type="text" name="nome" placeholder="login" autofocus>
+        <input required class="texto" type="text" name="nome" placeholder="login" autofocus>
 
         <select id="cargo" class="texto" style="width:330px;" oninput="mudar_opcao()" >
             <option value="aluno" selected>Aluno</option>
@@ -23,9 +23,9 @@
             <option value="representante_de_sala">Representante de Sala</option>
         </select>
 
-        <input class="texto" type="password" name="senha" placeholder="*****">
+        <input required class="texto" type="password" name="senha" placeholder="*****">
 
-        <img  id="img-2" src="../img/livros_escolares.png">
+        <img id="img-2" src="../img/livros_escolares.png">
 
         <div id="caixa-botao">
             <input type="submit" value="ENVIAR">
