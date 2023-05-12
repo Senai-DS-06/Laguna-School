@@ -24,7 +24,7 @@ A plataforma deve realizar uma seleção de conteúdos, dependendo da permissão
 ![HTML;CSS;JAVASCRIPT;](https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png)
 
 Função                      | Nome                   | Descrição
- -------------------------: | :--------------------: | -----------
+ :------------------------- | :--------------------: | -----------
 Linguagem de Marcação       | HTML                   | estruturação de páginas
 Linguagems de Marcação      | CSS                    | estilização de páginas web
 Linguagem de Programação    | Javascript             | dinamicidade das páginas web
