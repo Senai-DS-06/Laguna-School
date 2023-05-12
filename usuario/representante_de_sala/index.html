@@ -1,0 +1,47 @@
+<!DOCTYPE html> <html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laguna School - Representante de Sala</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+</head>
+
+<body>
+    <main id="caixa-atividades"></main>
+    
+    <div id="entrega-tela">
+
+        <div class="nova">
+
+            <div id="header-container">
+                <h1 id="atividade-titulo"></h1>
+                <button onclick="fechar_container();" id="fechar-container">X</button>
+            </div>
+
+            <label>Data:</label>
+            <input id="atividade-data" type="date">
+
+            <label>Horário:</label>
+            <input id="atividade-horario" type="time">
+
+            <h3 id="atividade-materia"></h3>
+
+            <label>Descrição:</label>
+            <br>
+            <textarea id="atividade-descricao" rows="5" cols="34"></textarea>
+
+            <div id="footer-container">
+                <button onclick="nova_atividade();">ENVIAR</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+    
+</html>

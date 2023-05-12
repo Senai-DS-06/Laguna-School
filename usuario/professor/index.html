@@ -1,0 +1,80 @@
+<!DOCTYPE html> <html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laguna School - Aluno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+</head>
+
+<body>
+    <main id="caixa-atividades"></main>
+
+    <button onclick="novo_container()" id="botao-adicionar">ADICIONAR ATIVIDADE</button>
+    
+    <div id="entrega-tela">
+
+        <div class="nova">
+
+            <div id="header-container">
+                <label>Título:</label>
+                <input type="text" id="atividade-titulo"></input>
+                <button onclick="fechar_container();" id="fechar-container">X</button>
+            </div>
+
+            <label>Data:</label>
+            <input id="atividade-data" type="date">
+
+            <label>Horário:</label>
+            <input id="atividade-horario" type="time">
+
+            <hr>
+
+            <label>Matéria:</label>
+            <select id="atividade-materia" onchange="mudar_cor()">
+                <optgroup label="Ciências Exatas">
+                    <option value="Matemática">Matemática</option>
+                </optgroup>
+
+                <optgroup label="Ciências Humanas">
+                    <option value="História">História</option>
+                    <option value="Geografia">Geografia</option>
+                    <option value="Filosofia">Filosofia</option>
+                    <option value="Sociologia">Sociologia</option>
+                </optgroup>
+
+                <optgroup label="Ciências Naturais">
+                    <option value="Biologia">Biologia</option>
+                    <option value="Química">Química</option>
+                    <option value="Física">Física</option>
+                </optgroup>
+
+                <optgroup label="Linguagens">
+                    <option value="Língua Portuguesa">Língua Portuguesa</option>
+                    <option value="Inglês">Inglês</option>
+                    <option value="Artes">Artes</option>
+                </optgroup>
+
+                <option value="Nada" selected>Indefinido</option>
+            </select>
+
+            <hr>
+
+            <label>Descrição:</label>
+            <br>
+            <textarea id="atividade-descricao" rows="5" cols="34"></textarea>
+
+            <div id="footer-container">
+                <button onclick="nova_atividade();">ENVIAR</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+    
+</html>
