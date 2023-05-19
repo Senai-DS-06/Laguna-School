@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laguna School - Aluno</title>
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../geral.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main id="caixa-atividades"></main>
     
-    <form id="entrega-tela">
+    <form id="container">
 
-        <div class="entrega">
+        <div id="box">
 
-            <div id="header-container">
-                <h1 id="titulo-container"></h1>
-                <button onclick="fechar_container();" id="fechar-container">X</button>
+            <div id="header">
+                <h1 id="titulo"></h1>
+                <button onclick="fechar_container();" id="fechar">X</button>
             </div>
 
-            <p id="descricao-container"></p>
+            <p id="data-horario"></p>
             <hr>
+
+            <p id="descricao"></p> <hr>
             <p>Entregue sua atividade aqui:</p>
 
-            <div id="envios">
-                <label for="licao">ENVIAR ARQUIVO</label>
-                <input type="file" id="licao">
-                <textarea rows="5" id="envios-area" placeholder="comentários"></textarea>
+            <div id="envia-area">
+                <label for="licao">
+                    <img src="../../img/icon_arquivo.png" height="40">
+                    <h2>ENVIAR ARQUIVO</h2>
+                </label>
+                <input id="licao" type="file">
+                <textarea id="comentarios" placeholder="comentários"></textarea>
+
             </div>
 
-            <input id="enviar-arquivo" type="submit" value="ENVIAR">
+            <button id="footer">ENVIAR</button>
 
         </div>
 

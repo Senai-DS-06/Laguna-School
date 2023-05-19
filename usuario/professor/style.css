@@ -1,124 +1,31 @@
-
-* {
-    font-family: 'Courier New', Courier, monospace;
-
-    padding: 0;
-    margin: 0;
-}
-
 body {
     background-color: rgb(220, 20, 20);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-hr {
-    margin: 10px;
-}
-
-.atividade {
-    background-color: azure;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-    width: 85vw;
-
-    border: 6px solid;
-}
-
-#entrega-tela {
-    display: none;
-
-    position: absolute;
-
-    justify-content: center;
-    align-items: center;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba( 0,0,0,0.5 );
-}
-
-.entrega, .nova {
-    width: 60%;
-    max-width: 500px;
-    height: auto;
-
-    background-color: aliceblue;
-    border: 1px black solid;
-    border-radius: 20px;
-
-    padding: 10px;
-}
-
-#atividade-materia {
-    padding: 6px;
-    border: 0;
-    border-radius: 4px;
-    border-bottom: 2px black solid;
-
+#titulo {
+    background-color: transparent;
+    width: 220px;
     font-size: 16px;
-    width: 70%;
-
-    background-color: rgba( 0,0,0,0.1 );
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid black;
 }
 
-#atividade-descricao {
+#materia {
+    background-color: rgba( 0, 0, 0, 0.1 );
     padding: 4px;
+    width: 220px;
+    font-size: 16px;
+    text-align: center;
 
+    border-radius: 20px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+#descricao {
     resize: none;
-
-    margin-top: 4px;
-    margin-bottom: 8px;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    font-weight: bolder;
-    font-size: large;
-    width: 100%;
-
-    border: 0;
-    border-radius: 50px;
-    padding: 18px;
     margin-top: 10px;
-
-    background-color: cornflowerblue;
-}
-
-#header-container, #footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    min-height: 40px;
-    
-    margin-bottom: 10px;
-    border-radius: 50px;
-    padding: 10px;
-    padding-left: 28px;
-
-    background-color: cornflowerblue;
-}
-
-#fechar-container {
-    width: 36px;
-    height: 36px;
-
-    font-size: x-large;
-    font-weight: bolder;
-
-    background-color: rgba( 150, 150, 255, 0.8 );
-
-    border: 0;
-    border-radius: 50px;
 }
 
 #botao-adicionar {
@@ -126,8 +33,9 @@ input[type="submit"] {
     font-size: large;
     width: fit-content;
 
-    border: 0;
+    border: 1px solid black;
     border-radius: 50px;
+
     padding: 18px;
     margin-top: 10px;
 

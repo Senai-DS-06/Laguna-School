@@ -6,11 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Laguna School</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 </head>
 
 <body>
-    <h1>Lagoona School</h1>
+    <img src="./img/logo.png" id="logo">
+
+    <form id="cadastro" class="cadastro" action="/usuario/aluno/index.html">
+        <h1>LOGIN</h1>
+
+        <input required class="texto" type="text" placeholder="login" autofocus>
+
+        <select id="cargo" class="texto" style="width:330px;" oninput="mudar_opcao()" >
+            <option value="aluno" selected>Aluno</option>
+            <option value="professor">Professor</option>
+            <option value="representante_de_sala">Representante de Sala</option>
+        </select>
+
+        <input required class="texto" type="password" placeholder="*****">
+
+        <img id="img-2" src="./img/livros_escolares.png">
+
+        <div id="caixa-botao">
+            <input type="submit" value="ENVIAR">
+            <input type="reset"  value="LIMPAR">
+        </div>
+    </form>
+    
+    <div id="extras">
+        <img id="img-1" src="./img/fundo_agenda.webp">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
+

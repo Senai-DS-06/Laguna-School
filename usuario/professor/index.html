@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laguna School - Aluno</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Laguna School - Professor</title>
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../geral.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main id="caixa-atividades"></main>
-
     <button onclick="novo_container()" id="botao-adicionar">ADICIONAR ATIVIDADE</button>
+
+    <main id="caixa-atividades"></main>
     
-    <div id="entrega-tela">
+    <div id="container">
 
-        <div class="nova">
+        <div id="box">
 
-            <div id="header-container">
+            <div id="header">
                 <label>Título:</label>
-                <input type="text" id="atividade-titulo"></input>
-                <button onclick="fechar_container();" id="fechar-container">X</button>
+                <input type="text" id="titulo"></input>
+                <button onclick="fechar_container();" id="fechar">X</button>
             </div>
 
             <label>Data:</label>
-            <input id="atividade-data" type="date">
+            <input id="data" type="date">
 
             <label>Horário:</label>
-            <input id="atividade-horario" type="time">
+            <input id="horario" type="time">
 
             <hr>
-
             <label>Matéria:</label>
-            <select id="atividade-materia" onchange="mudar_cor()">
+            <select id="materia" onchange="mudar_cor()">
                 <optgroup label="Ciências Exatas">
                     <option value="Matemática">Matemática</option>
                 </optgroup>
@@ -53,6 +53,7 @@
 
                 <optgroup label="Linguagens">
                     <option value="Língua Portuguesa">Língua Portuguesa</option>
+                    <option value="Literatura">Literatura</option>
                     <option value="Inglês">Inglês</option>
                     <option value="Artes">Artes</option>
                 </optgroup>
@@ -61,14 +62,11 @@
             </select>
 
             <hr>
-
             <label>Descrição:</label>
             <br>
-            <textarea id="atividade-descricao" rows="5" cols="34"></textarea>
+            <textarea id="descricao" rows="10" cols="49"></textarea>
 
-            <div id="footer-container">
-                <button onclick="nova_atividade();">ENVIAR</button>
-            </div>
+            <button id="footer" onclick="editar_adicionar_atividade();">ENVIAR</button>
 
         </div>
 

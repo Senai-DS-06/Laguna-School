@@ -1,0 +1,120 @@
+* {
+    /* fonte ( Courier new ) e centralização */
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+    /* Remove as bordas de todos os elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    background-color: #081844;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.cadastro {
+    margin-left: 80px;
+
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: linear-gradient(to top, #113263 20%, rgb(154, 177, 199) 80%);
+    opacity: .9;
+
+    border-radius: 15px;
+    border: 3;
+    border-style: groove;
+}
+
+
+.texto {
+    background-color: rgba(255, 255, 255,0.7);
+    border: 0;
+
+    font-size: 16px;
+
+    width: 300px;
+
+    padding: 16px;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+
+    margin-top: 15px;
+}
+
+#img-2 {
+    width: 200px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#extras {
+    background-color: rgb(102, 139, 173);
+
+    position: absolute;
+    transform: translate( -60%, -50% );
+    left: 100%;
+    top: 100%;
+    z-index: -5;
+
+    display: flex;
+
+    height: 180%;
+    aspect-ratio: 3/2;
+
+    border-radius: 50%;
+}
+
+#img-1 {
+    width: 400px;
+    height: fit-content;
+
+    margin-left: 28%;
+    margin-top: 8%;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 20px;
+
+    background-color: rgb(255, 255, 255);
+    opacity: .7;
+
+    border-radius: 6px;
+    border: 0;
+
+    color: rgb(22, 31, 51);
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+}
+
+#logo {
+    /* Borda circular da logo */
+    border-radius: 100%;
+    border: 2px rgba( 0, 0, 0, 0.2 ) solid;
+
+    background-image: linear-gradient( to right, rgb(5, 5, 121), blue );
+
+    /* Tamanho da imagem */
+    width: 120px;
+
+    /* Posicionamento da logo */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

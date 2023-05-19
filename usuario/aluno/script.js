@@ -1,5 +1,5 @@
 
-function fechar_container () { document.getElementById( "entrega-tela" ).style.display = 'none'; }
+function fechar_container () { document.getElementById( "container" ).style.display = 'none'; }
 
 var atividades = [
     {
@@ -25,19 +25,8 @@ var atividades = [
     }
 ]
 
-function abrir_container ( id ) {
-    var { titulo, materia, descricao } = atividades[id];
-
-    document.getElementById( "entrega-tela" ).style.display = 'flex';
-
-    document.getElementById( "titulo-container" ).innerText = titulo;
-    document.getElementById( "descricao-container" ).innerText = descricao;
-
-    document.getElementById( "header-container" ).style.backgroundColor = materia_cor[materia];
-    document.getElementById( "enviar-arquivo" ).style.backgroundColor = materia_cor[materia];
-}
-
-let materia_cor = {
+var materia_cor = {
+    "Artes": "Indigo",
     "História": "lightgreen",
     "Matemática": "orange",
     "Geografia": "brown",
@@ -46,18 +35,46 @@ let materia_cor = {
     "Sociologia": "indianred",
     "Biologia": "indigo",
     "Química": "springgreen",
-    "Física": "slateblue"
+    "Física": "slateblue",
+    "Literatura": "cornflowerblue",
+    "Nada": "lightgrey"
+}
+
+function abrir_container ( id ) {
+    var { titulo, materia, descricao, data, horario } = atividades[id];
+
+    document.getElementById( "container" ).style.display = 'flex';
+
+    document.getElementById( "titulo" ).innerText = titulo;
+    document.getElementById( "descricao" ).innerText = descricao;
+
+    document.getElementById( "data-horario" ).innerText = data+" - "+horario;
+
+    document.getElementById( "header" ).style.backgroundColor = materia_cor[materia];
+    document.getElementById( "footer" ).style.backgroundColor = materia_cor[materia];
 }
 
 function adicionarAtividade( id ) {
     var { titulo, materia, data, horario } = atividades[id];
     document.getElementById( "caixa-atividades" ).innerHTML += `
-        <div class="atividade" style="border-color: ${materia_cor[materia]};" onclick="abrir_container(${id});" >
-            <h5>${materia}</h5>
-            <h1>${titulo}</h1>
-            <h4>${data} - ${horario}</h4>
+        <div class="atividade" onclick="abrir_container(${id});" >
+            <div class="atividade-head" style="background-color: ${materia_cor[materia]};">
+                <div class="atividade-circulos">
+                    <div class="circulo" style="background-color: lightgreen;"></div>
+                    <div class="circulo" style="background-color: yellow;"></div>
+                    <div class="circulo" style="background-color: red;"></div>
+                </div>
+            </div>
+
+            <div class="atividade-conteudo">
+                <h1>${titulo}</h1>
+                <hr>
+                <h5>${materia}</h5>
+                <h4>${data} - ${horario}</h4>
+            </div>
         </div>
     `;
 }
 
 atividades.forEach( ( _, index ) => adicionarAtividade( index ) )
+

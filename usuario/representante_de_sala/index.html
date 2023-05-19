@@ -5,37 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laguna School - Representante de Sala</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../geral.css">
 </head>
 
 <body>
     <main id="caixa-atividades"></main>
     
-    <div id="entrega-tela">
+    <div id="container">
 
-        <div class="nova">
+        <div id="box">
 
-            <div id="header-container">
-                <h1 id="atividade-titulo"></h1>
-                <button onclick="fechar_container();" id="fechar-container">X</button>
+            <div id="header">
+                <h1 id="titulo"></h1>
+                <button onclick="fechar_container();" id="fechar">X</button>
             </div>
+
+            <h3 id="materia"></h3>
+            <hr>
 
             <label>Data:</label>
-            <input id="atividade-data" type="date">
+            <input id="data" type="date">
 
             <label>Horário:</label>
-            <input id="atividade-horario" type="time">
+            <input id="horario" type="time">
+            <hr>
 
-            <h3 id="atividade-materia"></h3>
+            <label>Descrição:</label><br>
+            <textarea id="descricao" rows="10" cols="49"></textarea>
 
-            <label>Descrição:</label>
-            <br>
-            <textarea id="atividade-descricao" rows="5" cols="34"></textarea>
-
-            <div id="footer-container">
-                <button onclick="nova_atividade();">ENVIAR</button>
-            </div>
+            <button id="footer" onclick="editar_atividade();">ENVIAR</button>
 
         </div>
 
