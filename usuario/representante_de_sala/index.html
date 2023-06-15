@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laguna School - Representante de Sala</title>
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../geral.css">
 </head>
 
 <body>
+    <header>
+        <a href="../../">
+            <img width="26px" id="home" alt="home" src="https://cdn-icons-png.flaticon.com/512/3917/3917033.png">
+        </a>
+        <h3 class="logo">Laguna School</h3>
+    </header>
+
     <main id="caixa-atividades"></main>
     
-    <div id="container">
+    <dialog id="dialog">
 
         <div id="box">
 
             <div id="header">
                 <h1 id="titulo"></h1>
-                <button onclick="fechar_container();" id="fechar">X</button>
+                <img alt="close" height="40" src="https://cdn-icons-png.flaticon.com/512/786/786397.png" onclick="dialog.close()" id="fechar">
             </div>
 
             <h3 id="materia"></h3>
@@ -33,13 +40,13 @@
             <hr>
 
             <label>Descrição:</label><br>
-            <textarea id="descricao" rows="10" cols="49"></textarea>
+            <textarea id="descricao" rows="10" cols="36"></textarea>
 
             <button id="footer" onclick="editar_atividade();">ENVIAR</button>
 
         </div>
 
-    </div>
+    </dialog>
 
     <script src="script.js"></script>
 </body>

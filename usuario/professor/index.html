@@ -7,22 +7,29 @@
     <title>Laguna School - Professor</title>
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
     <link rel="stylesheet" href="../geral.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <button onclick="novo_container()" id="botao-adicionar">ADICIONAR ATIVIDADE</button>
+    <header>
+        <a href="../../" id="home-link">
+            <img width="26px" id="home" alt="home" src="https://cdn-icons-png.flaticon.com/512/3917/3917033.png">
+        </a>
+        <h3 class="logo">Laguna School</h3>
+    </header>
+
+    <button onclick="reset()" id="botao-adicionar">ADICIONAR ATIVIDADE</button>
 
     <main id="caixa-atividades"></main>
     
-    <div id="container">
+    <dialog id="dialog" onload="this.close()">
 
         <div id="box">
 
             <div id="header">
                 <label>Título:</label>
                 <input type="text" id="titulo"></input>
-                <button onclick="fechar_container();" id="fechar">X</button>
+                <img alt="close" height="40" src="https://cdn-icons-png.flaticon.com/512/786/786397.png" onclick="dialog.close()" id="fechar">
             </div>
 
             <label>Data:</label>
@@ -33,7 +40,10 @@
 
             <hr>
             <label>Matéria:</label>
-            <select id="materia" onchange="mudar_cor()">
+            <select id="materia" onchange="
+                el_header.style.backgroundColor = materia_cor[this.value];
+                el_footer.style.backgroundColor = materia_cor[this.value];
+            ">
                 <optgroup label="Ciências Exatas">
                     <option value="Matemática">Matemática</option>
                 </optgroup>
@@ -64,7 +74,7 @@
             <hr>
             <label>Descrição:</label>
             <br>
-            <textarea id="descricao" rows="10" cols="49"></textarea>
+            <textarea id="descricao"  rows="10" cols="36"></textarea>
 
             <button id="footer" onclick="editar_adicionar_atividade();">ENVIAR</button>
 

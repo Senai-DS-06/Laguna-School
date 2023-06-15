@@ -118,3 +118,9 @@ input[type="submit"], input[type="reset"] {
     right: 20px;
     top: 20px;
 }
+
+#sobre {
+    color: aliceblue;
+    text-decoration: overline underline;
+    margin-bottom: 10px;
+}

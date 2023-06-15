@@ -12,10 +12,11 @@
 <body>
     <img src="./img/logo.png" id="logo">
 
-    <form id="cadastro" class="cadastro" action="/usuario/aluno/index.html">
+    <form id="cadastro" class="cadastro">
+        <a href="./sobre" id="sobre">Sobre Nós</a>
         <h1>LOGIN</h1>
 
-        <input required class="texto" type="text" placeholder="login" autofocus>
+        <input class="texto" type="text" placeholder="login" autofocus required>
 
         <select id="cargo" class="texto" style="width:330px;" oninput="mudar_opcao()" >
             <option value="aluno" selected>Aluno</option>
@@ -23,7 +24,7 @@
             <option value="representante_de_sala">Representante de Sala</option>
         </select>
 
-        <input required class="texto" type="password" placeholder="*****">
+        <input class="texto" type="password" placeholder="*****" required>
 
         <img id="img-2" src="./img/livros_escolares.png">
 
